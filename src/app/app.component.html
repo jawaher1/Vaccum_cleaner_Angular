@@ -1,0 +1,68 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+
+    <form [formGroup]="Form" (ngSubmit)="onSubmit()"> 
+      <table class="tab">
+        <tr>
+         
+            <th>
+            <input
+            type="number" class="form-control" id="x" formControlName="x" name="x" placeholder="x" required/>
+            
+          </th>
+            <th>
+            <input
+            type="number" class="form-control" id="y" formControlName="y" name="y" placeholder="y" required/>
+            </th>
+            <th>
+            <input
+            type="number" class="form-control" id="Posx" formControlName="Posx" name="Posx" placeholder="Initial position x" required/>
+            </th>
+            <th>
+            <input
+            type="number" class="form-control" id="Posy" formControlName="Posy" name="Position" placeholder="Initial position y" required/></th>
+            <th>
+            <ejs-dropdownlist id='form-control' [dataSource]='OrientationOptions' #checkbox name="Orientation" class="select"
+            formControlName="Orientation" 
+            [popupHeight]="popHeight"
+           
+            [filterBarPlaceholder]="filterPlaceholder"
+            [placeholder]="localWaterMark"></ejs-dropdownlist>
+            </th>
+            <th>
+            <input
+            type="text" class="form-control" id="instructions" formControlName="instructions" name="instructions" style="width: 150px;"
+            placeholder="instructions" required/>
+            </th>
+        </tr>
+         
+          </table>
+            <div class="divbutton">
+              <button class="btn btn-sm text-white">SHOW</button>
+            </div>
+          
+   
+    
+      
+    </form>
+   
+    <div *ngIf="message" [ngClass]="message.cssClass">{{ message.text }}</div>
+
+    <div class="grid-container" *ngFor="let i of grids">
+        <div *ngFor="let j of i">
+         {{j}}</div>
+      
+      
+    </div>
+   
+
+    <div class= "result" *ngIf="showdiv">
+      <h4>The vacuum cleaner is situated at</h4>
+      <p><span id = "res"> x = {{this.ResPx}}</span></p>
+      <p><span id = "res"> y = {{this.ResPy}}</span></p>
+      <p><span id = "res"> Orientation = {{this.ResN}}</span></p>
+      <p><span id = "res"> Path = {{this.path}}</span></p>
+    </div>
+</div>
+</div>

@@ -1,0 +1,85 @@
+
+
+  
+.jumbotron{
+    width: 100%;
+    min-height: 570px;
+    margin: auto;
+    padding: 10px;
+  }
+  #header {
+    text-align: center;
+  }
+  
+  
+  .divbutton {
+    width: 170px;
+    margin-top: 50px;
+    margin-left: 570px;
+    margin-bottom:  50px;
+  
+   
+  }
+  .btn {
+    width: 100px;
+    background-color: #d81b60;
+    position: center;
+  }
+ 
+  
+  
+  .tr1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background-color: #495057;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 4px;
+    width: 500px;
+    background-color: #495057;
+    padding: 10px;
+    margin-left: 30%;
+    
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 15px;
+  
+  }
+  .form-control{
+    
+    width: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 50px;
+  }
+  
+  .select{
+    
+    width: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 50px;
+  }
+  .tab{
+      margin-left: 80px;
+  }
+  .result{
+     
+      margin-top: 150px;
+      margin-left: -50px;
+  }
+  #res{
+      color: #495057;
+   
+  }
+  
