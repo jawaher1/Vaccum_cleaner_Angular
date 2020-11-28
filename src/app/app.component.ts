@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
 import {  FormGroup, FormControl } from '@angular/forms';
-import { AlertService } from './services/alert.service';
+import { AlertService } from '../services/alert.service';
 import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-root',
